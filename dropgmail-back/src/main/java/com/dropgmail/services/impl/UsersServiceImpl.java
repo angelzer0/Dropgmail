@@ -53,6 +53,7 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public List<UsersDto> getAllUsers() {
+	System.out.println("HELLO BROS");
         return UsersMapper.listUserEntityToDto(usersRepository.findAllByAvailableTrue());
     }
 
